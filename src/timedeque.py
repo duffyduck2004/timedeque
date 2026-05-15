@@ -1,7 +1,11 @@
+"""A small module providing TimeDeque, a time-expiring deque."""
+
 from time import monotonic
 from collections import deque
 
 class TimeDeque:
+    """A deque-like container that removes items older than a time window."""
+
     def __init__(self, seconds):
         self.seconds = seconds
         self.items = deque()

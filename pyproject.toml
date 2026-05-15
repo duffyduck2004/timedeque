@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=77.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "timedeque"
+version = "0.1.0"
+description = "A deque-like container that removes items after a time window."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [
+    { name = "Achilles Moraitis" }
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/duffyduck2004/timedeque"
+
+[tool.setuptools]
+py-modules = ["timedeque"]
+package-dir = {"" = "src"}
